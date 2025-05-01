@@ -1,0 +1,134 @@
+
+
+.layered_filter_ul .radio,.layered_filter_ul .checkbox {
+    display: inline-block;
+}
+.ets_speed_dynamic_hook .cart-products-count{
+    display:none!important;
+}
+.ets_speed_dynamic_hook .ajax_cart_quantity ,.ets_speed_dynamic_hook .ajax_cart_product_txt,.ets_speed_dynamic_hook .ajax_cart_product_txt_s{
+    display:none!important;
+}
+.ets_speed_dynamic_hook .shopping_cart > a:first-child:after {
+    display:none!important;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bannercontainer {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.tp-caption {
+    position: absolute;
+    z-index: 10;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.medium_text {
+    font-size: 60px;
+    color: #fff;
+}
+
+.large_text {
+    font-size: 72px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.small_text {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 12px 24px;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    background: white;
+    color: #333;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    gap: 10px;
+}
+
+.control-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.control-dot.active {
+    background: white;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 20;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
